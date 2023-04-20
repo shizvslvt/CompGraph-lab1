@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Game</title>
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.0-alpha2/dist/css/bootstrap.css}">
+</head>
+<body>
+
+<div>
+    <table>
+        <tr th:each="row : ${matrix.matrix}">
+            <td th:each="chip : ${row}" style="width: 25%; height: 25%;" class="myBtn">
+                <a th:href="@{/click_chip(x=${chip.getX()}, y=${chip.getY()})}"
+                   th:if="${chip.value != 16}" th:text="${chip.getValue()}"
+                   style="display: flex; justify-content: center;
+                   height: 100%; width: 100%; align-items: center;
+                   text-decoration: none; color: white; font-size: 48px;">
+                </a>
+            </td>
+        </tr>
+    </table>
+    <a th:href="refresh_matrix" class="btn btn-dark myBtn">Refresh</a>
+</div>
+<style>
+    body {
+        background-color: #1b1c26;
+    }
+
+    div {
+        transform: translate(-50%, -50%);
+        width: 400px; height: 468px;
+        background-color: #444950;
+        top: 50%; left: 50%;
+        border-radius: 8px;
+        overflow: hidden;
+        position: fixed;
+    }
+
+    table {
+        width: 400px; height: 400px;
+        border-collapse: separate;
+        border-spacing: 5px;
+    }
+
+    .myBtn {
+        background-color: #282a36;
+        border-radius: 8px;
+        margin: 25px 5px
+    }
+</style>
+
+<script th:src="@{/webjars/jquery/3.6.4/dist/jquery.js}"></script>
+<script th:src="@{/webjars/popperjs__core/2.11.7/dist/umd/popper.js}"></script>
+<script th:src="@{/webjars/bootstrap/5.3.0-alpha2/dist/js/bootstrap.bundle.js}"></script>
+</body>
+</html>
