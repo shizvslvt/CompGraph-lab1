@@ -71,10 +71,8 @@ public class GameService {
         Chip sixteenthChip = findSixteenthChip(tempMatrix, x, y);
         if (sixteenthChip != null) {
             swap(tempMatrix, sixteenthChip, selectedChip);
-            checkWin();
         }
     }
-
     private void swap(Chip[][] tempMatrix, Chip sixteenthChip, Chip selectedChip) {
         int tempValue = sixteenthChip.getValue();
         sixteenthChip.setValue(selectedChip.getValue());
@@ -87,11 +85,9 @@ public class GameService {
 
     }
 
-    private void checkWin() {
+    public boolean checkWin() {
         Chips winMatrix = new Chips(fillStdMatrix());
-        if (matrix.equals(winMatrix)) {
-            System.out.println("WIN");
-        }
+        return matrix.equals(winMatrix);
     }
 
     private Chip getRandomNeighborChip(Chip[][] tempMatrix, Chip sixteenthChip) {

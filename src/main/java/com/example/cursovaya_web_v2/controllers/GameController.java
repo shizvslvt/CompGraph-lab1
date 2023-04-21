@@ -14,7 +14,7 @@ public class GameController {
     private GameService gameService;
     @GetMapping("/game")
     public String showMatrix(Model model) {
-        model.addAttribute("matrix", gameService.getMatrix());
+        model.addAttribute("matrix", gameService.getMatrix().getMatrix());
         return "game";
     }
 
@@ -27,6 +27,11 @@ public class GameController {
     @GetMapping("/click_chip")
     public String clickChip(@RequestParam int x, @RequestParam int y) {
         gameService.clickAndCheckChip(x,y);
+        if(gameService.checkWin()) {
+            return "win";
+        }
         return "redirect:/game";
     }
+
+
 }

@@ -12,4 +12,3 @@ public class Chip {
     private int y;
     private int value;
 }
-
