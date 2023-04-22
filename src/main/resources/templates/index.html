@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.0-alpha2/dist/css/bootstrap.css}">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<a href="game">Game</a>
-</body>
+<div>
+    <h1 class="myBtn" style="color: #ffffff; padding: 40px; text-align: center"> Fifteen Puzzle! </h1>
+   <a th:href="game" class="btn btn-dark myBtn" style=" display: flex; justify-content: center; padding: 10px">Start Game</a>
+</div>
 </html>
