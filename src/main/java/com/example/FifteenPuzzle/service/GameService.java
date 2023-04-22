@@ -1,6 +1,6 @@
-package com.example.cursovaya_web_v2.service;
-import com.example.cursovaya_web_v2.data.Chip;
-import com.example.cursovaya_web_v2.data.Chips;
+package com.example.FifteenPuzzle.service;
+import com.example.FifteenPuzzle.data.Chip;
+import com.example.FifteenPuzzle.data.Chips;
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;
 import org.springframework.stereotype.Service;

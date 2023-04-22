@@ -1,5 +1,5 @@
-package com.example.cursovaya_web_v2.controllers;
-import com.example.cursovaya_web_v2.service.GameService;
+package com.example.FifteenPuzzle.controllers;
+import com.example.FifteenPuzzle.service.GameService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
