@@ -28,7 +28,7 @@ public class GameService {
     private Chip[][] fillMatrix() {
         Chip[][] tempMatrix = fillStdMatrix();
         Chip sixteenthChip = tempMatrix[3][3];
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 10; i++) {
             Chip neighborChip = getRandomNeighborChip(tempMatrix,sixteenthChip);
             if (!(neighborChip == sixteenthChip)) {
                 swap(tempMatrix, sixteenthChip, neighborChip);
