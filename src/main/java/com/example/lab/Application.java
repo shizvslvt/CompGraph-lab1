@@ -1,9 +1,9 @@
-package com.example.FifteenPuzzle;
+package com.example.lab;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
-public class GameApplication {
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(GameApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }

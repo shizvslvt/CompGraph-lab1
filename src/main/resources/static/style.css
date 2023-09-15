@@ -1,37 +1,64 @@
 body {
     background-color: #1b1c26;
 }
-div {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    overflow: hidden; transform: translate(-50%, -50%);
-    border-radius: 8px; width: 400px; height: 468px;
-    position: fixed; background-color: #444950;
-    top: 50%; left: 50%;
+
+.main {
+    font-size: 90%;
+    overflow: hidden;
+    border-radius: 1rem;
+    width: 60%;
+    height: 90vh;
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    background-color: rgba(68, 73, 80, 0.32);
+    color: rgb(153, 161, 179);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 20px 25px -5px #000, 0 8px 10px -6px #000;
+    display: flex;
+    flex-direction: column;
 }
 
-table {
-    background-color: rgba(39, 40, 49, 0.25);
-    border-spacing: 5px; border-radius: 8px;
-    width: 390px; height: 390px;
-    border-collapse: separate;
-    margin: 5px;
+.input {
+    border-radius: 1rem;
+    margin: 15px;
+    padding: 15px;
+    background-color: #78839b33;
 }
-td {
-    width: 25%; height: 25%;
+
+p {
+    color: white;
 }
+
 .myChip {
-    display: flex; justify-content: center;
-    height: 100%; width: 100%; align-items: center;
-    text-decoration: none; color: white; font-size: 48px;
-    color: rgba(255, 255, 255, 0.50);
-    transition: all 0.4s ease;
+    margin: 3px;
+    align-items: center;
+    width: 80px;
+    text-decoration: none; color: white;
+    color: #86d9ca;
+    transition: all 0.5s ease;
 }
-.myChip:hover {
-    box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.3);
-    color: white; border-radius: 8px;
+label {
+    color: rgb(153 161 179);
+    width: 160px;
 }
 
 .myBtn {
-    margin: 25px 5px; border-radius: 8px;
-    background-color: #282a36;
+    margin: 5px; border-radius: 8px;
+    background-color: rgb(43 110 98/0.5);
 }
+.graph {
+    padding: 5px;
+    max-height: 70%;
+    display: flex;
+    justify-content: center;
+}
+.left-block {
+    float: left;
+    width: 50%;
+
+}
+
+

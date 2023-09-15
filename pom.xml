@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>fifteen_puzzle</artifactId>
+    <artifactId>lab</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cursovaya_web_v2</name>
     <description>cursovaya_web_v2</description>
